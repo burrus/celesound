@@ -1,4 +1,4 @@
-# celesound
+# CELESOUND
 
 ## Project setup
 ```
