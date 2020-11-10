@@ -1,6 +1,8 @@
 <template>
   <div class="menu">
-    <h1>Menu</h1>
+    <router-link to="/" :class="{ selected: $route.name == 'films' }">Films</router-link>
+    <router-link to="/about" :class="{ selected: $route.name == 'about' }">About</router-link>
+    <router-link to="/contact" :class="{ selected: $route.name == 'contact' }">Contact</router-link>
   </div>
 </template>
 
@@ -10,4 +12,20 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu {
+    text-align: right;
+  }
+}
+</style>
