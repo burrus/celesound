@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <img alt="Vue logo" src="@/assets/logo.png">
+    <img alt="Celesound logo" src="@/assets/celesound.png">
     <Menu/>
   </div>
 </template>
