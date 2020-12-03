@@ -16,7 +16,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import Menu from '@/components/Menu.vue'
@@ -31,14 +30,8 @@ export default {
 }
 </script>
 
-<style>
-.desktop {
-  align-self: center;
-  display: none;
-  margin: 0 30px;
-}
-
-.content, .films, .posters {
+<style scoped>
+.films, .posters {
   display: flex;
 }
 
@@ -63,14 +56,6 @@ export default {
 }
 
 @media only screen and (min-width: 600px) {
-    .desktop {
-        display: initial;
-    }
-
-    .content {
-      justify-content: space-between;
-    }
-
     .posters img {
       max-height: 70vh;
     }
@@ -78,7 +63,7 @@ export default {
 
 @media only screen and (min-width: 1000px) {
   .posters {
-      margin-left: -105px;
+      margin-left: -160px;
     }
 }
 </style>

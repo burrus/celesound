@@ -5,11 +5,33 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
 #app {
   color: #2c3e50;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   text-align: center;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+.content {
+  display: flex;
+}
+
+.desktop {
+  align-self: center;
+  display: none;
+  margin: 0 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop {
+    display: initial;
+  }
+
+  .content {
+    justify-content: space-between;
+  }
 }
 </style>

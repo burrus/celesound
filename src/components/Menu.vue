@@ -19,7 +19,17 @@ export default {
   text-align: left;
 }
 
+a {
+  color: #BBB;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
 .selected {
+  color: black;
   font-weight: bold;
 }
 
