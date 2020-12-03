@@ -26,12 +26,12 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .desktop {
-    display: initial;
-  }
-
   .content {
     justify-content: space-between;
+  }
+
+  .desktop {
+    display: initial;
   }
 }
 </style>
