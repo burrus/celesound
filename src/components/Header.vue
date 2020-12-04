@@ -1,12 +1,12 @@
 <template>
-  <div class="header">
-      <img alt="Celesound logo" src="@/assets/celesound.png">
-  </div>
+    <div class="header">
+        <img alt="Celesound logo" src="@/assets/celesound.png" />
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+    name: "Header",
 }
 </script>
 
