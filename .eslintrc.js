@@ -1,3 +1,5 @@
+// TODO: Fix linter for parentheses
+
 module.exports = {
     env: {
         browser: true,
@@ -9,8 +11,8 @@ module.exports = {
         quotes: ["error", "double"],
         semi: ["error", "never"],
         "arrow-parens": ["error", "always"],
-        "comma-dangle": ["error", "always-multiline"],
-        "function-paren-newline": "off",
+        "comma-dangle": ["error", "always-multiline", { "functions": "never" }],
+        "function-paren-newline": "never",
         "global-require": "off",
         "implicit-arrow-linebreak": "off",
         "import/extensions": "off",

@@ -7,11 +7,17 @@
             </div>
             <div class="posters">
                 <img
+                    @click="openFilmDetails('theImpendingLoop')"
                     alt="The Impending Loop poster"
                     src="@/assets/the-impending-loop.png"
                     id="theImpendingLoop"
                 />
-                <img alt="Strength poster" src="@/assets/strength.png" id="strength" />
+                <img
+                    @click="openFilmDetails('strength')"
+                    alt="Strength poster"
+                    src="@/assets/strength.png"
+                    id="strength"
+                />
             </div>
             <div></div>
         </div>
@@ -30,6 +36,22 @@ export default {
         Footer,
         Header,
         Menu,
+    },
+    methods: {
+        openFilmDetails(film) {
+            switch (film) {
+                case "theImpendingLoop":
+                    window.open(
+                        "https://www.sugrue.com/2020/11/20/39b0viycaqw9h0zfr48ll5tjyr3t31",
+                        // eslint-disable-next-line
+                        "_blank"
+                    )
+                    break
+                case "strength":
+                    window.open("http://artflo.gallery/strength", "_blank")
+                    break
+            }
+        },
     },
 }
 </script>
