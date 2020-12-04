@@ -5,7 +5,7 @@
             <a href="https://imdb.com" target="_blank">
                 <img alt="IMDb logo" src="@/assets/imdb.svg" />
             </a>
-            <a href="https://instagram.com/celesound" target="_blank">
+            <a href="https://instagram.com/wyatony" target="_blank">
                 <img alt="Instagram logo" src="@/assets/instagram.svg" />
             </a>
         </div>
