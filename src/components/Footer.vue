@@ -3,7 +3,7 @@
         <Menu />
         <div class="social">
             <a href="https://imdb.com" target="_blank">
-                <img alt="IMDB logo" src="@/assets/imdb.svg" />
+                <img alt="IMDb logo" src="@/assets/imdb.svg" />
             </a>
             <a href="https://instagram.com/celesound" target="_blank">
                 <img alt="Instagram logo" src="@/assets/instagram.svg" />
