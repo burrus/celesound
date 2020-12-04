@@ -6,8 +6,12 @@
                 <Menu />
             </div>
             <div class="posters">
-                <img alt="The Impending Loop poster" src="@/assets/the-impending-loop.png" />
-                <img alt="Strength poster" src="@/assets/strength.png" />
+                <img
+                    alt="The Impending Loop poster"
+                    src="@/assets/the-impending-loop.png"
+                    id="theImpendingLoop"
+                />
+                <img alt="Strength poster" src="@/assets/strength.png" id="strength" />
             </div>
             <div></div>
         </div>
@@ -31,6 +35,10 @@ export default {
 </script>
 
 <style scoped>
+::-webkit-scrollbar {
+    display: none;
+}
+
 .films,
 .posters {
     display: flex;
@@ -47,13 +55,22 @@ export default {
 }
 
 .posters {
+    margin: 0 -10px;
     overflow: auto;
 }
 
 .posters img {
-    margin-right: 10px;
+    margin-left: 10px;
     max-height: 100%;
     max-width: 90%;
+}
+
+#theImpendingLoop {
+    padding-left: 10px;
+}
+
+#strength {
+    padding-right: 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -65,6 +82,16 @@ export default {
 @media only screen and (min-width: 1100px) {
     .posters {
         margin-left: -160px;
+        margin-right: 0;
+    }
+
+    #theImpendingLoop {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #strength {
+        padding-right: 0;
     }
 }
 </style>
