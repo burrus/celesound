@@ -20,6 +20,7 @@ module.exports = {
         "no-irregular-whitespace": ["error", { skipComments: true }],
         "no-unused-vars": process.env.NODE_ENV === "production" ? "error" : "warn",
         "operator-linebreak": "off",
+        "parser": "babel-eslint",
         "wrap-iife": "off",
     },
 }

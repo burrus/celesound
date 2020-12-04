@@ -32,7 +32,7 @@ a {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-bottom: 20px;
     width: 100%;
 }
 

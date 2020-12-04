@@ -91,7 +91,7 @@ export default {
 
 @media only screen and (min-width: 500px) {
     .bio img {
-        max-width: 75vw;
+        max-width: 80vw;
     }
 }
 

@@ -21,7 +21,7 @@ img {
     height: 31px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
     img {
         width: 578px;
         height: 60px;
