@@ -74,6 +74,7 @@ export default {
                 this.name = null
                 this.email = null
                 this.message = null
+                this.isValidForm = false
 
                 alert("Your message has been sent!")
             } catch (error) {
@@ -81,13 +82,14 @@ export default {
             }
         },
         validateForm() {
-            if (!this.name || !this.message) return
+            if (!this.name || !this.message) {
+                this.isValidForm = false
+                return
+            }
 
             var regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-            if (regex.test(this.email)) {
-                this.isValidForm = true
-            }
+            if (regex.test(this.email)) this.isValidForm = true
         },
     },
 }
@@ -117,6 +119,15 @@ form {
 
 h3 {
     color: black;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    background-color: #f2f2f2;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 input,
@@ -126,7 +137,24 @@ textarea::placeholder {
     font-family: "Roboto Mono", sans-serif;
 }
 
+input {
+    height: 50px;
+}
+
 textarea {
+    padding-top: 20px;
     resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+input[type="submit"]:disabled {
+    background-color: #f2f2f2;
+    color: #999;
 }
 </style>
