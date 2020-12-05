@@ -12,7 +12,7 @@ module.exports = {
         semi: ["error", "never"],
         "arrow-parens": ["error", "always"],
         "comma-dangle": ["error", "always-multiline", { "functions": "never" }],
-        "function-paren-newline": "never",
+        "function-paren-newline": ["error", "never"],
         "global-require": "off",
         "implicit-arrow-linebreak": "off",
         "import/extensions": "off",

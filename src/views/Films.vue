@@ -7,16 +7,16 @@
             </div>
             <div class="posters">
                 <img
-                    @click="openFilmDetails('theImpendingLoop')"
-                    alt="The Impending Loop poster"
-                    src="@/assets/the-impending-loop.png"
-                    id="theImpendingLoop"
-                />
-                <img
                     @click="openFilmDetails('strength')"
                     alt="Strength poster"
                     src="@/assets/strength.png"
                     id="strength"
+                />
+                <img
+                    @click="openFilmDetails('theImpendingLoop')"
+                    alt="The Impending Loop poster"
+                    src="@/assets/the-impending-loop.png"
+                    id="theImpendingLoop"
                 />
             </div>
             <div></div>
@@ -30,6 +30,11 @@ import Footer from "@/components/Footer.vue"
 import Header from "@/components/Header.vue"
 import Menu from "@/components/Menu.vue"
 
+const urls = {
+    strength: "http://artflo.gallery/strength",
+    theImpendingLoop: "https://www.sugrue.com/2020/11/20/39b0viycaqw9h0zfr48ll5tjyr3t31",
+}
+
 export default {
     name: "Films",
     components: {
@@ -40,15 +45,11 @@ export default {
     methods: {
         openFilmDetails(film) {
             switch (film) {
-                case "theImpendingLoop":
-                    window.open(
-                        "https://www.sugrue.com/2020/11/20/39b0viycaqw9h0zfr48ll5tjyr3t31",
-                        // eslint-disable-next-line
-                        "_blank"
-                    )
-                    break
                 case "strength":
-                    window.open("http://artflo.gallery/strength", "_blank")
+                    window.open(urls.strength, "_blank")
+                    break
+                case "theImpendingLoop":
+                    window.open(urls.theImpendingLoop, "_blank")
                     break
             }
         },
@@ -87,11 +88,15 @@ export default {
     max-width: 90%;
 }
 
-#theImpendingLoop {
-    padding-left: 10px;
+.posters img:hover {
+    cursor: pointer;
 }
 
 #strength {
+    padding-left: 10px;
+}
+
+#theImpendingLoop {
     padding-right: 20px;
 }
 
@@ -107,12 +112,12 @@ export default {
         margin-right: 0;
     }
 
-    #theImpendingLoop {
+    #strength {
         margin-left: 0;
         padding-left: 0;
     }
 
-    #strength {
+    #theImpendingLoop {
         padding-right: 0;
     }
 }

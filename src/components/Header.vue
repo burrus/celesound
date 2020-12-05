@@ -1,6 +1,8 @@
 <template>
     <div class="header">
-        <img alt="Celesound logo" src="@/assets/celesound.png" />
+        <router-link to="/">
+            <img alt="Celesound logo" src="@/assets/celesound.png" />
+        </router-link>
     </div>
 </template>
 
