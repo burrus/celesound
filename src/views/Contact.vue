@@ -161,4 +161,26 @@ input[type="submit"]:disabled {
     background-color: #f2f2f2;
     color: #999;
 }
+
+@media only screen and (min-width: 600px) {
+    .fields {
+        margin: 0;
+        width: 60vw;
+    }
+
+    h3 {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .fields {
+        margin-left: -180px;
+        width: 40vw;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
 </style>

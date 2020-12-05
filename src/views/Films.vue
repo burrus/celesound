@@ -108,7 +108,7 @@ export default {
 
 @media only screen and (min-width: 1100px) {
     .posters {
-        margin-left: -160px;
+        margin-left: -170px;
         margin-right: 0;
     }
 
