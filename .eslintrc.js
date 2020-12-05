@@ -1,5 +1,3 @@
-// TODO: Fix linter for parentheses
-
 module.exports = {
     env: {
         browser: true,
