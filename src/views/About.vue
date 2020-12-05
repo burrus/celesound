@@ -53,7 +53,6 @@ export default {
 .bio {
     flex-direction: column;
     margin: 0 auto;
-    overflow: auto;
     text-align: left;
 }
 

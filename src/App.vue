@@ -32,7 +32,7 @@
 #openSource {
     color: black;
     font-size: 0.8em;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 #openSource a {
