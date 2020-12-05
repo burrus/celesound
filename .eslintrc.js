@@ -4,6 +4,7 @@ module.exports = {
         es6: true,
     },
     extends: ["plugin:vue/essential"],
+    parserOptions: { "parser": "babel-eslint" },
     rules: {
         indent: ["error", 4, { SwitchCase: 1 }],
         quotes: ["error", "double"],
@@ -20,7 +21,6 @@ module.exports = {
         "no-irregular-whitespace": ["error", { skipComments: true }],
         "no-unused-vars": process.env.NODE_ENV === "production" ? "error" : "warn",
         "operator-linebreak": "off",
-        "parser": "babel-eslint",
         "wrap-iife": "off",
     },
 }
