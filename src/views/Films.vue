@@ -78,7 +78,7 @@ export default {
 }
 
 .posters {
-    margin: auto -10px;
+    margin: 0 -10px;
     overflow: auto;
 }
 
