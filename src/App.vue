@@ -1,6 +1,10 @@
 <template>
     <div id="app">
         <router-view />
+        <p id="openSource">
+            This site is
+            <a href="https://github.com/burrus/celesound" target="_blank">open source</a>
+        </p>
     </div>
 </template>
 
@@ -23,6 +27,20 @@
     align-self: center;
     display: none;
     margin: 0 50px;
+}
+
+#openSource {
+    color: black;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+#openSource a {
+    color: black;
+}
+
+#openSource a:hover {
+    text-decoration: line-through;
 }
 
 @media only screen and (min-width: 600px) {
