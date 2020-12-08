@@ -43,10 +43,6 @@ import Footer from "@/components/Footer.vue"
 import Header from "@/components/Header.vue"
 import Menu from "@/components/Menu.vue"
 
-const serviceId = "service_rxbovf7"
-const templateId = "contact_form"
-const userId = "user_FEcV7BFrGCIsYPA0PbtV6"
-
 export default {
     name: "Contact",
     components: {
@@ -65,7 +61,7 @@ export default {
     methods: {
         sendEmail(e) {
             try {
-                emailjs.sendForm(serviceId, templateId, e.target, userId, {
+                emailjs.sendForm(process.env.VUE_APP_ZOHO_SERVICE_ID, process.env.VUE_APP_ZOHO_TEMPLATE_ID, e.target, process.env.VUE_APP_ZOHO_USER_ID, {
                     name: this.name,
                     email: this.email,
                     message: this.message,
