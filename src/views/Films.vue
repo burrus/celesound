@@ -74,7 +74,6 @@ export default {
 }
 
 .content {
-    /* margin: 30px 0 20px; */
     max-height: 85%;
 }
 
@@ -86,8 +85,6 @@ export default {
 }
 
 .posters {
-    /* margin: 0 -10px; */
-    /* max-height: 85%; */
     margin: 10px -10px 0 -10px;
     overflow: auto;
 }
@@ -106,11 +103,16 @@ export default {
 
 @media only screen and (min-width: 600px) {
     .content {
+        margin-top: 30px;
         max-height: 100%;
     }
 
     .films {
         height: 100vh;
+    }
+
+    .posters {
+        margin-top: 0;
     }
     
     .posters img {

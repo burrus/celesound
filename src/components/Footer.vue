@@ -51,12 +51,20 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-    .menu {
-        display: none;
-    }
-
     .container {
         justify-content: space-around;
+    }
+
+    .footer {
+        /* 
+            (h) height(<OpenSource />) = 16px
+            margin-bottom = -2h
+         */
+        margin-bottom: -32px;
+    }
+
+    .menu {
+        display: none;
     }
 }
 </style>

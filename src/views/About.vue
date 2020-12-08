@@ -61,7 +61,7 @@ export default {
 }
 
 .content {
-    margin: 30px 0 20px;
+    margin-top: 30px;
 }
 
 .cta {
@@ -107,7 +107,7 @@ export default {
     }
 
     .bio p {
-        max-width: 30vw;
+        max-width: 430px;
     }
 
     .small {
