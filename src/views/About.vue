@@ -39,20 +39,9 @@ export default {
 </script>
 
 <style scoped>
-.about,
 .bio {
-    display: flex;
-}
-
-.about {
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
-}
-
-.bio {
-    flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -89,6 +78,13 @@ export default {
 }
 
 @media only screen and (min-width: 500px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
     .bio img {
         max-width: 80vw;
     }
@@ -102,7 +98,7 @@ export default {
 
 @media only screen and (min-width: 1000px) {
     .bio {
-        flex-direction: initial;
+        display: flex;
     }
 
     .bio img {
@@ -120,6 +116,12 @@ export default {
 
     .large {
         display: initial;
+    }
+}
+
+@media only screen and (min-height: 1300px) {
+    .bio img {
+        max-width: 40vw;
     }
 }
 </style>

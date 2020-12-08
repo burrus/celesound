@@ -69,23 +69,27 @@ export default {
 
 .films {
     flex-direction: column;
-    height: 100vh;
+    height: 92vh;
     justify-content: space-between;
 }
 
 .content {
-    margin: 30px 0 20px;
-}
-
-.posters {
-    margin: 0 -10px;
-    overflow: auto;
+    /* margin: 30px 0 20px; */
+    max-height: 85%;
 }
 
 .posters img {
+    margin: auto 0;
     margin-left: 10px;
-    max-height: 90%;
-    max-width: 90%;
+    max-height: 85%;
+    max-width: 85%;
+}
+
+.posters {
+    /* margin: 0 -10px; */
+    /* max-height: 85%; */
+    margin: 10px -10px 0 -10px;
+    overflow: auto;
 }
 
 .posters img:hover {
@@ -101,6 +105,14 @@ export default {
 }
 
 @media only screen and (min-width: 600px) {
+    .content {
+        max-height: 100%;
+    }
+
+    .films {
+        height: 100vh;
+    }
+    
     .posters img {
         max-height: 70vh;
     }

@@ -107,7 +107,7 @@ export default {
 
 .contact {
     flex-direction: column;
-    height: 100vh;
+    height: 92vh;
     justify-content: space-between;
 }
 
@@ -163,6 +163,10 @@ input[type="submit"]:disabled {
 }
 
 @media only screen and (min-width: 600px) {
+    .contact {
+        height: 100vh;
+    }
+
     .fields {
         margin: 0;
         width: 60vw;
