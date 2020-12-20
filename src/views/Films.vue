@@ -87,6 +87,11 @@ export default {
 .posters {
     margin: 10px -10px 0 -10px;
     overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.posters img {
+    scroll-snap-align: start;
 }
 
 .posters img:hover {

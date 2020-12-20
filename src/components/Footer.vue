@@ -3,8 +3,7 @@
         <div class="container">
             <Menu />
             <div class="social">
-                <!-- <a href="https://imdb.com" target="_blank"> -->
-                <a>
+                <a href="https://www.imdb.com/name/nm12156346" target="_blank">
                     <img alt="IMDb logo" src="@/assets/imdb.svg" />
                 </a>
                 <a href="https://instagram.com/wyatony" target="_blank">
