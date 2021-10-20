@@ -6,8 +6,8 @@
                 <Menu />
             </div>
             <div class="bio">
-                <img alt="Selfie" src="@/assets/selfie-small.png" class="small" />
-                <img alt="Selfie" src="@/assets/selfie-large.png" class="large" />
+                <img alt="Selfie" src="@/assets/studio-small.png" class="small" />
+                <img alt="Selfie" src="@/assets/studio-large.png" class="large" />
                 <p>
                     <b>CELESOUND</b> is a music company from <b>William Anthony</b> - a composer,
                     producer, and multi-instrumentalist based in California. <br /><br />
@@ -51,7 +51,7 @@ export default {
 }
 
 .bio img {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .bio p {
