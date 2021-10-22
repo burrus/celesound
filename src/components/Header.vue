@@ -25,8 +25,8 @@ img {
 
 @media only screen and (min-width: 1000px) {
     img {
-        width: 578px;
-        height: 60px;
+        width: 434px;
+        height: 45px;
     }
 }
 </style>

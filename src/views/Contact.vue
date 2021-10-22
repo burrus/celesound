@@ -99,16 +99,15 @@ export default {
 .contact,
 .fields {
     display: flex;
+    flex-direction: column;
 }
 
 .contact {
-    flex-direction: column;
     height: 92vh;
     justify-content: space-between;
 }
 
 .fields {
-    flex-direction: column;
     margin: 0 auto;
     width: 90vw;
 }
