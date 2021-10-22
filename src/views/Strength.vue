@@ -6,22 +6,21 @@
                 <Menu />
             </div>
             <div class="album">
-                <img alt="Strength logo" src="@/assets/strength-title.png" />
+                <a href="http://artflo.gallery/strength" target="_blank">
+                    <img id="strength-title" alt="Strength title" src="@/assets/strength-title.png" />
+                </a>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/nz/album/strength-original-motion-picture-score/1588965603"></iframe>
-                <p>
-                    Find it on 
-                    <a href="https://music.apple.com/nz/album/strength-original-motion-picture-score/1588965603" target="_blank">Amazon Music</a>,
-                    <a href="https://music.apple.com/nz/album/strength-original-motion-picture-score/1588965603" target="_blank">Apple Music</a>, and
-                    <a href="https://music.apple.com/nz/album/strength-original-motion-picture-score/1588965603" target="_blank">Spotify</a>
-                </p>
-                <p>
-                    Music composed by 
-                    <a href="https://music.apple.com/nz/album/strength-original-motion-picture-score/1588965603" target="_blank">William Anthony</a>
-                </p>
-                <p>
-                    A film by
-                    <a href="http://artflo.gallery/strength" target="_blank">arthur gallery</a>
-                </p>
+                <div class="badges">
+                    <a href="https://www.amazon.com/gp/product/B09HSS52SB/?tag=distrokid06-20" target="_blank">
+                        <img class="listen" alt="Amazon music badge" src="@/assets/amazon-music.png" />
+                    </a>
+                    <a href="https://music.apple.com/album/strength-original-motion-picture-score/1588965603" target="_blank">
+                        <img class="listen" id="apple-music" alt="Apple music badge" src="@/assets/apple-music.png" />
+                    </a>
+                    <a href="https://open.spotify.com/album/0ZOJ2Mnx6O7CwISAAnpZXt" target="_blank">
+                        <img class="listen" alt="Apple music badge" src="@/assets/spotify.png" />
+                    </a>
+                </div>
             </div>
             <div></div>
         </div>
@@ -60,7 +59,7 @@ export default {
     width: 90vw;
 }
 
-.album img {
+#strength-title {
     margin: 0 auto;
     width: 279px;
     height: 44px;
@@ -70,18 +69,17 @@ iframe {
     margin: 25px 0;
 }
 
-.album p {
-    font-size: 0.8em;
-    margin: 2px 0;
+.badges {
+    margin-bottom: 25px;
 }
 
-.album a {
-    color: black;
-    font-weight: bold;
+.listen {
+    width: 142px;
+    height: 41px;
 }
 
-.album a:hover {
-    text-decoration: line-through;
+#apple-music {
+    margin: 0 10px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -94,10 +92,9 @@ iframe {
         width: 60vw;
     }
 
-    /* .album img {
-        width: 279px;
-        height: 44px;
-    } */
+    .badges {
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -105,5 +102,10 @@ iframe {
         margin-left: -180px;
         width: 40vw;
     }
+
+    #strength-title {
+        width: 419px;
+        height: 66px;
+    } 
 }
 </style>
