@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <Header />
+        <Header :showTitle=true />
         <div class="content">
             <div class="desktop">
                 <Menu />

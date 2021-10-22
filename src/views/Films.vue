@@ -1,6 +1,6 @@
 <template>
     <div class="films">
-        <Header />
+        <Header :showTitle=true />
         <div class="content">
             <div class="desktop">
                 <Menu />
@@ -46,7 +46,7 @@ export default {
         openFilmDetails(film) {
             switch (film) {
                 case "strength":
-                    window.open(urls.strength, "_blank")
+                    this.$router.push("strength")
                     break
                 case "theImpendingLoop":
                     window.open(urls.theImpendingLoop, "_blank")
