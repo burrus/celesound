@@ -49,7 +49,7 @@ export default {
                     this.$router.push("strength")
                     break
                 case "theImpendingLoop":
-                    window.open(urls.theImpendingLoop, "_blank")
+                    this.$router.push("theImpendingLoop")
                     break
             }
         },

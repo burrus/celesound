@@ -25,6 +25,11 @@ const routes = [
         name: "strength",
         component: () => import("@/views/Strength.vue"),
     },
+    {
+        path: "/theimpendingloop",
+        name: "theImpendingLoop",
+        component: () => import("@/views/TheImpendingLoop.vue"),
+    },
 ]
 
 const router = new VueRouter({
