@@ -30,11 +30,6 @@ import Footer from "@/components/Footer.vue"
 import Header from "@/components/Header.vue"
 import Menu from "@/components/Menu.vue"
 
-const urls = {
-    strength: "http://artflo.gallery/strength",
-    theImpendingLoop: "https://www.sugrue.com/2020/11/20/39b0viycaqw9h0zfr48ll5tjyr3t31",
-}
-
 export default {
     name: "Films",
     components: {
