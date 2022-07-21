@@ -1,6 +1,6 @@
 <template>
-    <div class="footer">
-        <div class="container">
+    <div :class="['staticClass', showOpenSource ? 'open-source' : 'footer']">
+        <div class="container" :class="{ 'open-source-container': showOpenSource }">
             <Menu />
             <div class="social">
                 <a href="https://www.imdb.com/name/nm12156346" target="_blank">
@@ -11,7 +11,7 @@
                 </a>
             </div>
         </div>
-        <OpenSource />
+        <OpenSource v-if="showOpenSource"/>
     </div>
 </template>
 
@@ -24,6 +24,9 @@ export default {
     components: {
         Menu,
         OpenSource,
+    },
+    props: {
+        showOpenSource: Boolean,
     },
 }
 </script>
@@ -42,7 +45,7 @@ a {
 }
 
 .footer {
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .social {
@@ -55,11 +58,19 @@ a {
     }
 
     .footer {
+        margin-bottom: 10px;
+    }
+
+    .open-source {
         /* 
             (h) height(<OpenSource />) = 16px
             margin-bottom = -2h
          */
         margin-bottom: -32px;
+    }
+
+    .open-source-container {
+        margin-bottom: -8px;
     }
 
     .menu {

@@ -3,13 +3,9 @@ on:
   pull_request:
     branches:
     - main
-    tags:
-    - 'v1.2.*'
   push:
     branches:
     - main
-    tags:
-    - 'v1.2.*'
 jobs:
   build:
     name: Build

@@ -12,14 +12,14 @@
                     <b>CELESOUND</b> is a music company from <b>William Anthony</b> - a composer,
                     producer, and multi-instrumentalist based in California. <br /><br />
                     An amalgamation of the words <b>Celestino</b> (late grandfather) and
-                    <b>sound</b>, this company creates original music, beats, songs, and film scores
-                    that make people <b>feel</b>.<br /><br />Have a project with music needs?
+                    <b>sound</b>, this company creates original music that makes people 
+                    <b>feel</b>.<br /><br />Have a project with music needs?
                     <router-link to="/contact" class="cta">Let's talk</router-link>.
                 </p>
             </div>
             <div></div>
         </div>
-        <Footer />
+        <Footer :showOpenSource=true />
     </div>
 </template>
 
@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .bio {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: left;
 }
 
@@ -83,6 +83,10 @@ export default {
         flex-direction: column;
         height: 100vh;
         justify-content: space-between;
+    }
+
+    .bio {
+        margin-bottom: 20px;
     }
 
     .bio img {
