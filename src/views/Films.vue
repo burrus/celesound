@@ -44,7 +44,8 @@ export default {
                     this.$router.push("strength")
                     break
                 case "theImpendingLoop":
-                    this.$router.push("theImpendingLoop")
+                    // this.$router.push("theImpendingLoop")
+                    window.open("https://distrokid.com/hyperfollow/williamanthony1/the-impending-loop-original-motion-picture-score", "_blank")
                     break
             }
         },
