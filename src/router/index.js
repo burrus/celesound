@@ -30,6 +30,11 @@ const routes = [
         name: "theImpendingLoop",
         component: () => import("@/views/TheImpendingLoop.vue"),
     },
+    {
+        path: "/genesisx",
+        name: "genesisX",
+        component: () => import("@/views/GenesisX.vue"),
+    },
 ]
 
 const router = new VueRouter({

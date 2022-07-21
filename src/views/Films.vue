@@ -7,16 +7,21 @@
             </div>
             <div class="posters">
                 <img
-                    @click="openFilmDetails('strength')"
-                    alt="Strength poster"
-                    src="@/assets/strength.png"
-                    id="strength"
+                    @click="openFilmDetails('genesisX')"
+                    alt="Genesis X poster"
+                    src="@/assets/genesis-x.png"
+                    id="first"
                 />
                 <img
                     @click="openFilmDetails('theImpendingLoop')"
                     alt="The Impending Loop poster"
                     src="@/assets/the-impending-loop.png"
-                    id="theImpendingLoop"
+                />
+                <img
+                    @click="openFilmDetails('strength')"
+                    alt="Strength poster"
+                    src="@/assets/strength.png"
+                    id="last"
                 />
             </div>
             <div></div>
@@ -40,12 +45,15 @@ export default {
     methods: {
         openFilmDetails(film) {
             switch (film) {
-                case "strength":
-                    this.$router.push("strength")
+                case "genesisX":
+                    this.$router.push("genesisX")
                     break
                 case "theImpendingLoop":
                     // this.$router.push("theImpendingLoop")
                     window.open("https://distrokid.com/hyperfollow/williamanthony1/the-impending-loop-original-motion-picture-score", "_blank")
+                    break
+                case "strength":
+                    this.$router.push("strength")
                     break
             }
         },
@@ -76,7 +84,7 @@ export default {
 .posters img {
     margin: auto 0;
     margin-left: 10px;
-    max-height: 85%;
+    max-height: 85% !important;
     max-width: 85%;
 }
 
@@ -94,11 +102,11 @@ export default {
     cursor: pointer;
 }
 
-#strength {
+#first {
     padding-left: 10px;
 }
 
-#theImpendingLoop {
+#last {
     padding-right: 20px;
 }
 
@@ -112,6 +120,11 @@ export default {
         height: 100vh;
     }
 
+    #first {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .posters {
         margin-top: 0;
     }
@@ -123,17 +136,22 @@ export default {
 
 @media only screen and (min-width: 1100px) {
     .posters {
-        margin-left: -170px;
         margin-right: 0;
     }
 
-    #strength {
+    #first {
         margin-left: 0;
         padding-left: 0;
     }
 
-    #theImpendingLoop {
+    #last {
         padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .posters {
+        margin-left: -170px;
     }
 }
 </style>
