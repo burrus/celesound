@@ -7,7 +7,7 @@
             </div>
             <div class="teaser">
                 <h3 id="title">GENESIS X</h3>
-                <img alt="Genesis X collage" src="@/assets/genesis-x-collage.png" class="collage" />
+                <img alt="Genesis X collage" src="@/assets/genesis-x-collage.png" id="collage" />
                 <p>Coming soon (^_-)+*</p>
             </div>
             <div></div>
@@ -66,8 +66,10 @@ export default {
     text-shadow: -1px 1px black;
 }
 
-.collage {
+#collage {
     margin: 50px 0;
+    max-width: 300px;
+    object-fit: contain;
 }
 
 @media only screen and (min-width: 600px) {

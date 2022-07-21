@@ -16,6 +16,7 @@
                     @click="openFilmDetails('theImpendingLoop')"
                     alt="The Impending Loop poster"
                     src="@/assets/the-impending-loop.png"
+                    class="middle"
                 />
                 <img
                     @click="openFilmDetails('strength')"
