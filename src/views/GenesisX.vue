@@ -5,9 +5,10 @@
             <div class="desktop">
                 <Menu />
             </div>
-            <div class="coming-soon">
-                <h3>Coming soon</h3>
-                <p>Album scheduled for fall <b>2022</b></p>
+            <div class="teaser">
+                <h3 id="title">GENESIS X</h3>
+                <img alt="Genesis X collage" src="@/assets/genesis-x-collage.png" class="collage" />
+                <p>Coming soon (^_-)+*</p>
             </div>
             <div></div>
         </div>
@@ -31,7 +32,9 @@ export default {
 </script>
 
 <style scoped>
-.genesis-x, .coming-soon {
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.genesis-x, .teaser {
     display: flex;
     flex-direction: column;
 }
@@ -41,17 +44,30 @@ export default {
     justify-content: space-between;
 }
 
-.coming-soon {
+.teaser {
     margin: 0 auto;
     width: 90vw;
 }
 
-.coming-soon h3 {
+.teaser h3 {
     margin-bottom: 0;
 }
 
-.coming-soon p {
+.teaser p {
     margin-bottom: 25px;
+}
+
+#title {
+    color: #bd8eea;
+    font-family: "Iceland", sans-serif;
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: -1px 1px black;
+}
+
+.collage {
+    margin: 50px 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -59,16 +75,24 @@ export default {
         height: 100vh;
     }
 
-    .coming-soon {
+    .teaser {
         margin: 0;
         width: 60vw;
+    }
+
+    #title {
+        font-size: 5em;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .coming-soon {
+    .teaser {
         margin-left: -180px;
         width: 40vw;
+    }
+
+    #title {
+        font-size: 6em;
     }
 }
 </style>
