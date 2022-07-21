@@ -85,7 +85,7 @@ export default {
 .posters img {
     margin: auto 0;
     margin-left: 10px;
-    max-height: 85% !important;
+    max-height: 85%;
     max-width: 85%;
 }
 
