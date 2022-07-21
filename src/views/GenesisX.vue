@@ -67,7 +67,7 @@ export default {
 }
 
 #collage {
-    margin: 50px 0;
+    margin: 50px auto;
     max-width: 300px;
     object-fit: contain;
 }
