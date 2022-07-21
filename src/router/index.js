@@ -26,13 +26,13 @@ const routes = [
         component: () => import("@/views/Strength.vue"),
     },
     {
-        path: "/theimpendingloop",
-        name: "theImpendingLoop",
+        path: "/the-impending-loop",
+        name: "the-impending-loop",
         component: () => import("@/views/TheImpendingLoop.vue"),
     },
     {
-        path: "/genesisx",
-        name: "genesisX",
+        path: "/genesis-x",
+        name: "genesis-x",
         component: () => import("@/views/GenesisX.vue"),
     },
 ]

@@ -47,10 +47,10 @@ export default {
         openFilmDetails(film) {
             switch (film) {
                 case "genesisX":
-                    this.$router.push("genesisX")
+                    this.$router.push("genesis-x")
                     break
                 case "theImpendingLoop":
-                    // this.$router.push("theImpendingLoop")
+                    // this.$router.push("the-impending-loop")
                     window.open("https://distrokid.com/hyperfollow/williamanthony1/the-impending-loop-original-motion-picture-score", "_blank")
                     break
                 case "strength":

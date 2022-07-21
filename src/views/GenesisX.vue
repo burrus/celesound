@@ -6,7 +6,9 @@
                 <Menu />
             </div>
             <div class="teaser">
-                <h3 id="title">GENESIS X</h3>
+                <a href="http://artflo.gallery/genesisx" target="_blank">
+                    <h3 id="title">GENESIS X</h3>
+                </a>
                 <img alt="Genesis X collage" src="@/assets/genesis-x-collage.png" id="collage" />
                 <p>Coming soon (^_-)+*</p>
             </div>
@@ -49,6 +51,10 @@ export default {
     width: 90vw;
 }
 
+.teaser a {
+    text-decoration: none;
+}
+
 .teaser h3 {
     margin-bottom: 0;
 }
@@ -68,7 +74,7 @@ export default {
 
 #collage {
     margin: 50px auto;
-    max-width: 300px;
+    max-width: 100%;
     object-fit: contain;
 }
 
