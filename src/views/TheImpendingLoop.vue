@@ -65,7 +65,7 @@ export default {
 #the-impending-loop-title {
     margin: 0 auto;
     width: 300px;
-    height: 30px;
+    height: 25px;
 }
 
 iframe {
@@ -92,7 +92,7 @@ iframe {
     
     #the-impending-loop-title {
         width: 350px;
-        height: 33px;
+        height: 28px;
     }
 
     .album {
@@ -113,7 +113,7 @@ iframe {
     
     #the-impending-loop-title {
         width: 400px;
-        height: 38px;
+        height: 31px;
     }
 }
 </style>
