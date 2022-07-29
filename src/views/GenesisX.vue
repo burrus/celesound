@@ -6,7 +6,7 @@
                 <Menu />
             </div>
             <div class="teaser">
-                <a href="http://artflo.gallery/genesisx" target="_blank">
+                <a href="https://www.imdb.com/title/tt20836014/fullcredits/?ref_=tt_cl_sm" target="_blank">
                     <h3 id="title">GENESIS X</h3>
                 </a>
                 <img alt="Genesis X collage" src="@/assets/genesis-x-collage.png" id="collage" />
@@ -68,7 +68,6 @@ export default {
     font-family: "Iceland", sans-serif;
     font-size: 3.5em;
     margin-top: 0;
-    margin-bottom: 10px;
     text-shadow: -1px 1px black;
 }
 

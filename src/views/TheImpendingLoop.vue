@@ -5,10 +5,25 @@
             <div class="desktop">
                 <Menu />
             </div>
-            <div class="coming-soon">
-                <h3>Coming soon</h3>
-                <p>Album scheduled for early <b>2022</b></p>
-                <img alt="The Impending Loop credits" src="@/assets/the-impending-loop-small.png" />
+            <div class="album">
+                <a href="https://www.imdb.com/title/tt15138136/fullcredits/?ref_=tt_cl_sm" target="_blank">
+                    <img id="the-impending-loop-title" alt="The Impending Loop title"
+                        src="@/assets/the-impending-loop-title.png" />
+                </a>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0"
+                    height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                    src="https://embed.music.apple.com/us/album/the-impending-loop-original-motion-picture-score-ep/1635782777"></iframe>
+                <div class="badges">
+                    <a href="https://music.apple.com/us/album/the-impending-loop-original-motion-picture-score-ep/1635782777"
+                        target="_blank">
+                        <img class="listen" id="apple-music" alt="Apple music badge" src="@/assets/apple-music.png" />
+                    </a>
+                    <a href="https://open.spotify.com/album/0tKOqtql9tsgRpD4n675Ag?si=CXM6CQJ4QaC-MgOkivrt6w"
+                        target="_blank">
+                        <img class="listen" alt="Spotify badge" src="@/assets/spotify.png" />
+                    </a>
+                </div>
             </div>
             <div></div>
         </div>
@@ -32,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.the-impending-loop, .coming-soon {
+.the-impending-loop, .album {
     display: flex;
     flex-direction: column;
 }
@@ -42,34 +57,63 @@ export default {
     justify-content: space-between;
 }
 
-.coming-soon {
+.album {
     margin: 0 auto;
     width: 90vw;
 }
 
-.coming-soon h3 {
-    margin-bottom: 0;
+#the-impending-loop-title {
+    margin: 0 auto;
+    width: 300px;
+    height: 30px;
 }
 
-.coming-soon p {
+iframe {
+    margin: 25px auto;
+}
+
+.badges {
     margin-bottom: 25px;
+}
+
+.listen {
+    width: 142px;
+    height: 41px;
+}
+
+#apple-music {
+    margin: 0 10px;
 }
 
 @media only screen and (min-width: 600px) {
     .the-impending-loop {
         height: 100vh;
     }
+    
+    #the-impending-loop-title {
+        width: 350px;
+        height: 33px;
+    }
 
-    .coming-soon {
+    .album {
         margin: 0;
         width: 60vw;
+    }
+
+    .badges {
+        margin-bottom: 0;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .coming-soon {
+    .album {
         margin-left: -180px;
         width: 40vw;
+    }
+    
+    #the-impending-loop-title {
+        width: 400px;
+        height: 38px;
     }
 }
 </style>

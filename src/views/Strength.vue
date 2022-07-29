@@ -6,16 +6,20 @@
                 <Menu />
             </div>
             <div class="album">
-                <a href="http://artflo.gallery/strength" target="_blank">
+                <a href="https://www.imdb.com/title/tt13664630/fullcredits/?ref_=tt_cl_sm" target="_blank">
                     <img id="strength-title" alt="Strength title" src="@/assets/strength-title.png" />
                 </a>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/nz/album/strength-original-motion-picture-score/1588965603"></iframe>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450"
+                    style="width:100%;overflow:hidden;background:transparent;"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                    src="https://embed.music.apple.com/nz/album/strength-original-motion-picture-score/1588965603"></iframe>
                 <div class="badges">
-                    <a href="https://music.apple.com/album/strength-original-motion-picture-score/1588965603" target="_blank">
+                    <a href="https://music.apple.com/album/strength-original-motion-picture-score/1588965603"
+                        target="_blank">
                         <img class="listen" id="apple-music" alt="Apple music badge" src="@/assets/apple-music.png" />
                     </a>
                     <a href="https://open.spotify.com/album/0ZOJ2Mnx6O7CwISAAnpZXt" target="_blank">
-                        <img class="listen" alt="Apple music badge" src="@/assets/spotify.png" />
+                        <img class="listen" alt="Spotify badge" src="@/assets/spotify.png" />
                     </a>
                 </div>
             </div>
