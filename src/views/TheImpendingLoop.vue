@@ -6,7 +6,7 @@
                 <Menu />
             </div>
             <div class="album">
-                <a href="https://www.imdb.com/title/tt15138136/fullcredits/?ref_=tt_cl_sm" target="_blank">
+                <a href="https://vimeo.com/472857059" target="_blank">
                     <img id="the-impending-loop-title" alt="The Impending Loop title"
                         src="@/assets/the-impending-loop-title.png" />
                 </a>
@@ -63,7 +63,7 @@ export default {
 }
 
 #the-impending-loop-title {
-    margin: 0 auto;
+    margin: 15px auto 10px;
     width: 300px;
     height: 25px;
 }
@@ -73,7 +73,7 @@ iframe {
 }
 
 .badges {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .listen {
@@ -101,7 +101,7 @@ iframe {
     }
 
     .badges {
-        margin-bottom: 0;
+        margin: 15px 0 25px;
     }
 }
 
