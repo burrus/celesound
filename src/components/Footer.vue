@@ -6,12 +6,15 @@
                 <a href="https://www.imdb.com/name/nm12156346" target="_blank">
                     <img alt="IMDb logo" src="@/assets/imdb.svg" />
                 </a>
+                <a href="https://discord.gg/YpbkrZXg9b" target="_blank">
+                    <img alt="Discord logo" src="@/assets/discord.svg" />
+                </a>
                 <a href="https://instagram.com/wyatony" target="_blank">
                     <img alt="Instagram logo" src="@/assets/instagram.svg" />
                 </a>
             </div>
         </div>
-        <OpenSource v-if="showOpenSource"/>
+        <OpenSource v-if="showOpenSource" />
     </div>
 </template>
 
