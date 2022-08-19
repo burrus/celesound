@@ -6,11 +6,11 @@
                 <a href="https://www.imdb.com/name/nm12156346" target="_blank">
                     <img alt="IMDb logo" src="@/assets/imdb.svg" />
                 </a>
+                <a id="instagram" href="https://instagram.com/wyatony" target="_blank">
+                    <img alt="Instagram logo" src="@/assets/instagram.svg" />
+                </a>
                 <a href="https://discord.gg/YpbkrZXg9b" target="_blank">
                     <img alt="Discord logo" src="@/assets/discord.svg" />
-                </a>
-                <a href="https://instagram.com/wyatony" target="_blank">
-                    <img alt="Instagram logo" src="@/assets/instagram.svg" />
                 </a>
             </div>
         </div>
@@ -35,10 +35,6 @@ export default {
 </script>
 
 <style scoped>
-a {
-    padding: 5px;
-}
-
 .container {
     background-color: white;
     display: flex;
@@ -53,6 +49,10 @@ a {
 
 .social {
     align-self: flex-end;
+}
+
+#instagram {
+    padding: 0 20px;
 }
 
 @media only screen and (min-width: 600px) {
