@@ -35,6 +35,11 @@ const routes = [
         name: "genesis-x",
         component: () => import("@/views/GenesisX.vue"),
     },
+    {
+        path: "/bridgerton",
+        name: "bridgerton",
+        component: () => import("@/views/Bridgerton.vue"),
+    },
 ]
 
 const router = new VueRouter({
