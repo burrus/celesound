@@ -9,8 +9,12 @@
                 <a href="https://www.imdb.com/title/tt20836014/fullcredits/?ref_=tt_cl_sm" target="_blank">
                     <h3 id="title">GENESIS X</h3>
                 </a>
-                <img alt="Genesis X collage" src="@/assets/genesis-x-collage.png" id="collage" />
-                <p>Coming soon (^_-)+*</p>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nYFBphSp4Oo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <p>Album coming soon (^_-)+*</p>
             </div>
             <div></div>
         </div>
@@ -71,10 +75,8 @@ export default {
     text-shadow: -1px 1px black;
 }
 
-#collage {
-    margin: 50px auto;
-    max-width: 100%;
-    object-fit: contain;
+iframe {
+    margin: 50px 0
 }
 
 @media only screen and (min-width: 600px) {
